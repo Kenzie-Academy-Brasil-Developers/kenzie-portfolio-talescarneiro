@@ -1,6 +1,7 @@
 import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
+import { appearRight } from "@/styles/Global";
 
 import img from "@/public/static/img/background/dots.svg";
 
@@ -21,6 +22,7 @@ export const HeaderContent = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "$2",
+  animation: `${appearRight} 1.5s`,
 });
 
 export const HeaderButtonsArea = styled(Flex, {
